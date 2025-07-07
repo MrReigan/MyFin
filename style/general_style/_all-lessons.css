@@ -1,0 +1,286 @@
+.lesson-1 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-1 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-1 path {
+  transition: color 0.5s;
+}
+
+.lesson-2 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-2 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-2 path {
+  transition: color 0.5s;
+}
+
+.lesson-3 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-3 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-3 path {
+  transition: color 0.5s;
+}
+
+.lesson-4 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-4 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-4 path {
+  transition: color 0.5s;
+}
+
+.lesson-5 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-5 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-5 path {
+  transition: color 0.5s;
+}
+
+.lesson-6 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-6 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-6 path {
+  transition: color 0.5s;
+}
+
+.lesson-7 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-7 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-7 path {
+  transition: color 0.5s;
+}
+
+.lesson-8 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-8 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-8 path {
+  transition: color 0.5s;
+}
+
+.lesson-9 {
+  width: 799px;
+  background-color: #141415;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.lesson-9 a:hover path {
+  color: #c1ef00;
+}
+
+.lesson-9 path {
+  transition: color 0.5s;
+}
+
+.ekz {
+  display: flex;
+  flex-flow: column;
+}
+
+.ekz p {
+  order: -1;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+  .lesson-1 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .lesson-1 a:hover path {
+    color: none;
+  }
+
+  .lesson-1 path {
+    transition: none;
+  }
+
+  .lesson-2 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-2 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-2 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-3 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-3 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-3 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-4 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-4 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-4 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-5 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-5 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-5 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-6 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-6 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-6 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-7 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-7 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-7 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-8 {
+    width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-8 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-8 path {
+    transition: color 0.5s;
+  }
+
+  .lesson-9 {
+    max-width: 100%;
+    background-color: #141415;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .lesson-9 a:hover path {
+    color: #c1ef00;
+  }
+
+  .lesson-9 path {
+    transition: color 0.5s;
+  }
+
+.ekz p {
+  order: -1;
+  margin-bottom: 6px;
+}
+}

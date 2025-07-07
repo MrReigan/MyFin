@@ -1,0 +1,426 @@
+@import url(/style/general_style/_all-pages.css);
+@import url(/style/general_style/_header.css);
+@import url(/style/general_style/_main-info-bread.css);
+@import url(/style/general_style/_card.css);
+
+.general-block {
+  margin-top: 119px;
+  width: 1340px;
+}
+
+.block-container {
+  margin: auto;
+  width: 800px;
+}
+
+.general-progress-bar {
+  position: fixed;
+  width: 800px;
+  background-color: #141415;
+  border-radius: 1000px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1000;
+}
+
+.general-progress-bar progress {
+  width: 400px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 35%);
+  border-radius: 1000px;
+  transition: width 0.5s; /* Плавное изменение ширины */
+}
+
+progress {
+  width: 100%;
+  appearance: none; /* Отмена стандартного вида */
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 1000px;
+}
+
+progress::-webkit-progress-value {
+  background: #c1ef00;
+  border-radius: 1000px;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 1000px;
+}
+
+.general-progress-bar h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.general-content {
+  padding-top: 40px;
+}
+
+.general-content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 100%);
+}
+
+.fos-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.fos-form {
+  margin-bottom: 40px;
+}
+
+.fos-form input[type="radio"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 255, 255, 80%);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.fos-form input[type="radio"]::after {
+  content: ""; /* Замените ссылку при необходимости */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.fos-form input[type="radio"]:checked::after {
+  content: url("/images/icons/check.svg"); /* Замените ссылку при необходимости */
+  opacity: 1;
+}
+
+.fos-option label {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 100%);
+  cursor: pointer;
+}
+
+.task-1,
+.task-2,
+.task-3,
+.task-4 {
+  margin-bottom: 40px;
+}
+
+.fos-btn {
+  text-align: center;
+}
+
+.fos-btn button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #c1ef00;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.fos-btn button:hover {
+  background-color: #c1ef00;
+  color: #141415;
+}
+
+.success-message {
+  display: none;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.success-message h2 {
+  color: #c1ef00;
+  margin-bottom: 56px;
+}
+.success-btn a {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #c1ef00;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
+.success-btn a:hover {
+    background-color: #c1ef00;
+    color: #141415;
+}
+
+@media (max-width: 480px) {
+  .general-block {
+    margin: 0 0 80px 0;
+    padding-top: 62px;
+    width: 100%;
+  }
+
+  .block-container {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .general-progress-bar {
+    position: sticky;
+    top: 55px;
+    max-width: 100%;
+    background-color: #141415;
+    border-radius: 1000px;
+    padding: 15px 10px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+  }
+
+  .general-progress-bar progress {
+    width: 200px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 35%);
+    border-radius: 1000px;
+    transition: width 0.5s; /* Плавное изменение ширины */
+  }
+
+  progress {
+    width: 100%;
+    appearance: none; /* Отмена стандартного вида */
+  }
+
+  progress::-webkit-progress-bar {
+    border-radius: 1000px;
+  }
+
+  progress::-webkit-progress-value {
+    background: #c1ef00;
+    border-radius: 1000px;
+  }
+
+  progress::-moz-progress-bar {
+    border-radius: 1000px;
+  }
+
+  .general-progress-bar h2 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .general-content {
+    padding-top: 16px;
+  }
+
+  .start-lek {
+    margin-bottom: 24px;
+  }
+
+  .general-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 100%);
+  }
+
+  .general-content li {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 35%);
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+
+  .general-content li:last-child {
+    margin-bottom: 0;
+  }
+
+  .start-lek-1 {
+    margin-bottom: 16px;
+  }
+
+  .lek-text p {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 35%);
+    margin-bottom: 8px;
+  }
+
+  .start-lek p:last-child {
+    margin-bottom: 0;
+  }
+
+  .lek-text-1 {
+    margin-bottom: 24px;
+  }
+
+  .quiz {
+    margin: 0 0 24px 0;
+    background-color: #141415;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .quiz-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .quiz-title img {
+    width: 50px;
+  }
+
+  .quiz-title-info p {
+    font-size: 11px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 35%);
+    margin-bottom: 6px;
+  }
+
+  .quiz-title-info h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 100%);
+  }
+
+  .quiz-info p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 100%);
+    margin-bottom: 16px;
+  }
+
+  .quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  .fos-form input[type="radio"] {
+  appearance: none;
+  width: 22px !important;
+  height: 22px !important;
+  border: 2px solid rgba(255, 255, 255, 80%);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.fos-form input[type="radio"]::after {
+  content: ""; /* Замените ссылку при необходимости */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.fos-form input[type="radio"]:checked::after {
+  content: url("/images/icons/check.svg"); /* Замените ссылку при необходимости */
+  opacity: 1;
+}
+
+  .fos-option {
+  display: flex;
+ align-items: center;
+  margin-bottom: 24px;
+}
+
+.fos-option span {
+  display: none;
+}
+
+.fos-option label {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 100%);
+  cursor: pointer;
+}
+
+.fos-btn button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #c1ef00;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.success-message {
+  display: none;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.success-message h2 {
+  color: #c1ef00;
+  margin-bottom: 52px;
+}
+.success-btn a {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #c1ef00;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 12px;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+  .lek-text-2 {
+    margin-bottom: 32px;
+  }
+
+  .lek-img {
+    margin-bottom: 32px;
+  }
+
+  .lek-img img {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .lek-text-3 {
+    margin-bottom: 24px;
+  }
+
+  .lek-text-4 {
+    margin-bottom: 84px;
+  }
+
+  .has-results {
+    padding: 0;
+  }
+}
