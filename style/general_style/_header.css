@@ -1,0 +1,219 @@
+.header {
+  position: fixed;
+  background-color: #141415;
+  width: 100px;
+  height: 100%;
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Плавное изменение ширины */
+  overflow: hidden; /* Скрываем содержимое, которое выходит за пределы */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Изначально тень отсутствует */
+}
+
+.header-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%; /* Занимает всю ширину родителя */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Плавное появление контента */
+}
+
+.header span {
+  display: none;
+  opacity: 0; /* Изначально текст скрыт */
+  transition: opacity 0.3s ease-in-out; /* Плавное появление текста */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header:hover {
+  width: 250px; /* Расширяем header при наведении */
+  box-shadow: 8px 0 15px rgba(0, 0, 0, 0.4); /* Изначально тень отсутствует */
+}
+
+.header:hover .header-content {
+  opacity: 1; /* Показываем контент */
+  transform: translateX(0); /* Сдвигаем контент на место */
+}
+
+.header:hover span {
+  display: block;
+  opacity: 1; /* Показываем текст */
+  transition-delay: 0.1s; /* Задержка для плавного появления */
+}
+
+.header:hover li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header:hover button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header a:hover {
+  color: #c1ef00;
+}
+
+.header-navbar img {
+  width: 60px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out; /* Плавное увеличение логотипа */
+}
+
+.header:hover .header-navbar img {
+  transform: scale(1.1); /* Увеличиваем логотип при наведении */
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out; /* Плавное изменение цвета */
+}
+
+.header-menu li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Плавное смещение пунктов меню */
+}
+
+.header-menu li:last-child {
+  margin: 0;
+}
+
+.active {
+  color: #c1ef00 !important;
+}
+
+.header-exit button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Плавное изменение цвета */
+}
+
+.header button:hover {
+  color: #c1ef00;
+}
+
+@media (max-width: 480px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+    background-color: #141415;
+    width: 100vw;
+    height: 60px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    z-index: 1000;
+    transition: none; /* Плавное изменение ширины */
+    overflow: hidden; /* Скрываем содержимое, которое выходит за пределы */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Изначально тень отсутствует */
+  }
+
+  .header-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%; /* Занимает всю ширину родителя */
+    transition: none; /* Плавное появление контента */
+  }
+
+  .header span {
+    display: block;
+    opacity: 1; /* Изначально текст скрыт */
+    transition: none; /* Плавное появление текста */
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: -12px;
+  }
+
+  .header:hover {
+    width: 100%; /* Расширяем header при наведении */
+    box-shadow: none; /* Изначально тень отсутствует */
+  }
+
+  .header:hover .header-content {
+    opacity: 1; /* Показываем контент */
+    transform: none; /* Сдвигаем контент на место */
+  }
+
+  .header:hover span {
+    display: block;
+    opacity: 1; /* Показываем текст */
+    transition-delay: none; /* Задержка для плавного появления */
+  }
+
+  .header:hover li a {
+    display: block;
+  }
+
+  .header:hover button {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .header a:hover {
+    color: none;
+  }
+
+  .header-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: none; /* Плавное изменение цвета */
+  }
+
+  .header-menu ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 6px 0 6px;
+  }
+
+  .header-menu li {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    width: 85px;
+    height: 48px;
+    margin-bottom: 0;
+    transition: none; /* Плавное смещение пунктов меню */
+  }
+
+  .header-menu li a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .active {
+    color: #c1ef00 !important;
+  }
+
+  .header-exit button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.3s ease-in-out; /* Плавное изменение цвета */
+  }
+
+  .header button:hover {
+    color: none;
+  }
+}

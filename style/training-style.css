@@ -1,0 +1,262 @@
+@import url(/style/general_style/_all-pages.css);
+@import url(/style/general_style/_header.css);
+@import url(/style/general_style/_main-info.css);
+
+.blocks {
+  padding-top: 108px;
+  margin: 0 24px 24px;
+  max-width: 1292px;
+}
+
+.top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.history {
+  background-color: #141415;
+  border-radius: 24px;
+  width: 800px;
+  height: 275px;
+}
+
+.history h2 {
+  padding: 24px 24px 0;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.history-img {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 800px;
+  padding: 0 24px;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-color: #c1ef00 #141415;
+  scrollbar-width: thin;
+}
+
+.history-img img {
+  width: 173px;
+  border: 2px solid #1c1c1d;
+  border-radius: 24px;
+}
+
+.abc {
+  background-color: #141415;
+  padding: 24px;
+  width: 470px;
+  height: 275px;
+  border-radius: 24px;
+}
+
+.abc h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 30px;
+}
+
+.abc-img {
+  background-color: #1c1c1d;
+  border-radius: 24px;
+}
+
+.abc-img img {
+  width: 421px;
+}
+
+.down-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.curse {
+  background-color: #141415;
+  padding: 24px;
+  width: 800px;
+  height: 592px;
+  border-radius: 24px;
+}
+
+.curse h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.curse-img img {
+  width: 750px;
+}
+
+.down-block-2 {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.instraction-chenal {
+  background-color: #141415;
+  padding: 24px;
+  border-radius: 24px;
+  width: 470px;
+  height: 284px;
+}
+
+.instraction-chenal h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.instraction-chenal-img {
+  background-color: #1c1c1d;
+  border-radius: 24px;
+}
+
+.instraction-chenal-img img {
+  width: 421px;
+}
+
+@media (max-width: 480px) {
+  .blocks {
+    padding-top: 68px;
+    margin: 0 16px;
+    max-width: 100%;
+  }
+
+  .top-block {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .history {
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 161px;
+    margin-bottom: 24px;
+  }
+
+  .history h2 {
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .history-img {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 123px;
+    padding: 0 6px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-color: #c1ef00 #141415;
+    scrollbar-width: thin;
+  }
+
+  .history-img img {
+    width: 109px;
+    outline: 6px solid #141415;
+    border-radius: 12px;
+  }
+
+  .abc {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .abc h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 100%;
+  }
+
+  .abc-img {
+    background-color: #141415;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .abc-img img {
+    width: 90vw;
+  }
+
+  .down-block {
+    display: block;
+    margin-bottom: 84px;
+    width: 100%;
+  }
+
+  .curse {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    margin-bottom: 24px;
+  }
+
+  .curse h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .curse-img {
+    background-color: #141415;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px 4px 8px;
+  }
+
+  .curse-img img {
+    width: 90vw;
+  }
+
+  .down-block-2 {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+  }
+
+  .instraction-chenal {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .instraction-chenal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .instraction-chenal-img {
+    background-color: #141415;
+    border-radius: 24px;
+  }
+
+  .instraction-chenal-img img {
+    width: 90vw;
+  }
+}

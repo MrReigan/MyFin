@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index-style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MYFIN" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <title>Вход MYFIN</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="avtorization">
+        <div class="logo desktop">
+          <img src="/images/logos/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="vhod">
+          <h1>Вход</h1>
+
+          <form  class="form" action="/authorization.php" method="post">
+            <div>
+              <input type="text" name="login" id="mail" placeholder="Почта" required />
+            </div>
+            <div class="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Пароль" required
+              />
+            </div>
+            <div class="lost-password">
+              <a href="/">Забыли пароль?</a>
+            </div>
+            <div class="form-button">
+              <button type="submit">Войти</button>
+            </div>
+          </form>
+
+          <div class="or">
+            <img src="/images/icons/line-left.svg" alt="" />
+            <p>Или</p>
+            <img src="/images/icons/line-right.svg" alt="" />
+          </div>
+
+          <div class="social">
+            <a href="/">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="59"
+                  height="59"
+                  rx="11.5"
+                  stroke="currentColor"
+                  stroke-opacity="0.35"
+                />
+                <path
+                  d="M33.6555 19.0155H31.3335C27.0764 19.0155 24.8404 21.1516 24.8404 24.3126C24.8404 27.9011 26.3884 29.567 29.5705 31.7031L32.1934 33.4545L24.6254 44.6895H18.9922L25.7863 34.6506C21.8733 31.8737 19.6801 29.1826 19.6801 24.6117C19.6801 18.8875 23.6793 15 31.2905 15H38.8586V44.6895H33.6555V19.0155Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="/">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="59"
+                  height="59"
+                  rx="11.5"
+                  stroke="currentColor"
+                  stroke-opacity="0.35"
+                />
+                <path
+                  d="M31.6252 40C20.8154 40 14.257 32.4861 14 20H19.4749C19.6456 29.172 23.8107 33.0586 27.0037 33.8578V20H32.2504V27.9155C35.3301 27.5735 38.5537 23.9731 39.6372 20H44.8015C43.975 24.8857 40.4656 28.4861 37.9861 29.9712C40.4676 31.1719 44.4601 34.3151 46 40H40.3237C39.1252 36.1998 36.1893 33.2565 32.2523 32.8569V40H31.6252Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="/">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="59"
+                  height="59"
+                  rx="11.5"
+                  stroke="currentColor"
+                  stroke-opacity="0.35"
+                />
+                <path
+                  d="M34.3618 30C34.3618 32.4052 32.4052 34.3618 30 34.3618C27.5948 34.3618 25.6382 32.4052 25.6382 30C25.6382 27.5948 27.5948 25.6382 30 25.6382C32.4052 25.6382 34.3618 27.5948 34.3618 30ZM30 15.5C22.0051 15.5 15.5 22.0051 15.5 30C15.5 37.9949 22.0051 44.5 30 44.5C32.929 44.5 35.7538 43.6282 38.168 41.9779L38.2097 41.9489L36.2558 39.6778L36.2232 39.6996C34.3645 40.8949 32.2122 41.5275 30 41.5275C23.6436 41.5275 18.4725 36.3564 18.4725 30C18.4725 23.6436 23.6436 18.4725 30 18.4725C36.3564 18.4725 41.5275 23.6436 41.5275 30C41.5275 30.8238 41.436 31.6575 41.2556 32.4777C40.8913 33.9739 39.8437 34.4325 39.0571 34.3717C38.2659 34.3074 37.3406 33.7437 37.3343 32.3644V31.3132V30C37.3343 25.9554 34.0446 22.6657 30 22.6657C25.9554 22.6657 22.6657 25.9554 22.6657 30C22.6657 34.0446 25.9554 37.3343 30 37.3343C31.9648 37.3343 33.8072 36.5658 35.1964 35.1693C36.0039 36.4262 37.3207 37.2147 38.8187 37.3343C38.9474 37.3452 39.0788 37.3506 39.2093 37.3506C40.2633 37.3506 41.3091 36.9981 42.1519 36.3573C43.021 35.6976 43.6699 34.7433 44.0287 33.5969C44.0858 33.412 44.191 32.9879 44.1919 32.9852L44.1946 32.9698C44.4058 32.0499 44.5 31.1328 44.5 30C44.5 22.0051 37.9949 15.5 30 15.5"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="reg">
+            <p>
+              Впервые в MYFIN?
+              <a href="/registration.html">Зарегистрироваться</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
