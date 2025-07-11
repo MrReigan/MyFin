@@ -6,11 +6,11 @@ const all_curse = [
     price: "Бесплатный",
     rating: "4.9",
     gone: "5",
-    img: "/images/card-img/curse-3.png",
+    img: "./images/card-img/curse-3.png",
     title: "Первый шаг в мире финансов",
     info: "5 лекций • 0 аудио • 0 видео",
     id: "1",
-    a: "/first-step.html"
+    a: "./first-step.html"
   },
 ];
 

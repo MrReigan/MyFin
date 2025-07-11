@@ -6,22 +6,22 @@ const in_plan = [
     price: "Платный",
     rating: "4.9",
     gone: "200",
-    img: "/images/card-img/curse-3.png",
+    img: "./images/card-img/curse-3.png",
     title: "Инвестиции в криптовалюту",
     info: "10 лекций • 8 аудио • 6 видео",
     id: "1",
-    a: "/curses.html"
+    a: "./curses.html"
   },
   {
     level: "Средний",
     price: "Бесплатный",
     rating: "4.7",
     gone: "300",
-    img: "/images/card-img/curse-3.png",
+    img: "./images/card-img/curse-3.png",
     title: "Фондовый рынок для начинающих",
     info: "6 лекций • 4 аудио • 3 видео",
     id: "2",
-    a: "/curses.html"
+    a: "./curses.html"
   },
 
   {
@@ -29,11 +29,11 @@ const in_plan = [
     price: "Бесплатный",
     rating: "4.9",
     gone: "350",
-    img: "/images/card-img/curse-3.png",
+    img: "./images/card-img/curse-3.png",
     title: "Успешные инвестиции: мифы и секреты",
     info: "5 лекций • 4 аудио • 5 видео",
     id: "3",
-    a: "/curses.html",
+    a: "./curses.html",
   },
 
   {
