@@ -1,4 +1,85 @@
-@import url(general_style/_all-pages.css) print;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #1c1c1d;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+main {
+  padding-left: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1c1c1d;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c1ef00;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #1c1c1d;
+}
+
+.container {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 24px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-left: 0;
+  }
+
+  .container {
+    width: 100vw;
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
 
 .avtorization {
   position: absolute;
